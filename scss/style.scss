@@ -20,8 +20,11 @@ body {
 /* Section Header*/
 
 header {
+  width: 100%;
+  height: 100%;
   background: $bg-color;
   position: relative;
+
   overflow: hidden;
 }
 
@@ -75,62 +78,76 @@ nav {
 }
 .header_svg {
   position: absolute;
-  width: 770px;
-  height: 450px;
+  width: 670px;
+  height: 400px;
 
   top: 0;
   right: 0;
 }
 
-/* Section Hero*/
-
-.header_title {
+.header_title_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 270px;
-  margin: 40px 125px;
-  font-size: 48px;
-  color: $light-text-color;
+  margin: 30px 125px;
+
+  p {
+    font-size: 48px;
+    color: $light-text-color;
+  }
   span {
     color: $logo-color;
   }
 }
-img {
-  width: 100%;
-  height: 560px;
-}
-.hero_img {
+
+.header_img {
   position: relative;
+  width: 100%;
+  height: 620px;
+  background: url("../img/jerry-1.png") no-repeat;
+  background-size: cover;
 }
-.hero_subtitle {
+.header_subtitle {
   position: absolute;
   bottom: 0;
-  padding: 60px 125px 0 125px;
-  width: 70%;
+  padding: 50px 125px 50px 125px;
+  width: 60%;
 
   background: $bg-color;
   p {
     color: $light-text-color;
+
     font-size: 32px;
     line-height: 32px;
     font-weight: bold;
     padding-bottom: 10px;
+    span {
+      opacity: 50%;
+    }
   }
 }
-.hero_desc {
-  padding: 16px 100px 16px 125px;
+
+/* Main Section */
+.header_title_desc {
+  background: $bg-color;
   color: $light-text-color;
-  font-size: 20px;
   font-weight: bold;
+}
+.header_title_desc_text {
+  padding: 16px 100px 16px 125px;
+
+  font-size: 20px;
+
   span {
     color: $logo-color;
   }
 }
 
-.hero_cta {
-  padding: 80px 100px 125px 125px;
+.header_title_desc_cta {
+  padding: 80px 100px 80px 125px;
   font-size: 32px;
   line-height: 32px;
-  font-weight: bold;
-  color: $light-text-color;
   span {
     color: $logo-color;
   }
@@ -143,6 +160,7 @@ img {
 /* Section Certificate*/
 
 .product_certificate {
+  padding-top: 20px;
   background: $dark-bg-color;
   display: flex;
 }
@@ -153,7 +171,7 @@ img {
 }
 .certificate_svg {
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 125px;
   width: 270px;
   height: 400px;
@@ -211,15 +229,18 @@ img {
 }
 .aim {
   grid-area: content1;
+  background: $darkest-bg-color;
 }
 .details {
   grid-area: content2;
+  background: $darkest-bg-color;
 }
 .storage {
   grid-area: content3;
+  background: $darkest-bg-color;
 }
 .point_content {
-  margin: 125px 125px 0;
+  margin: 100px 125px 0;
 }
 .point_title {
   margin: 60px 60px 0 0;
@@ -243,7 +264,7 @@ img {
   align-items: center;
   width: 160px;
   height: 40px;
-  margin: 30px 0 30px;
+  margin: 30px 0 70px;
 
   color: $btn-color;
   font-size: 20px;
