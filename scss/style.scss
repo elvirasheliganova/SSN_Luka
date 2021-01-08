@@ -496,6 +496,9 @@ nav {
     color: $logo-color;
   }
 }
+.ikat {
+  color: $additional-color;
+}
 .tu {
   span {
     color: $additional-color;
@@ -507,6 +510,13 @@ nav {
   font-weight: bold;
   span {
     color: $logo-color;
+  }
+}
+
+.article_subtitle_content {
+  padding-bottom: 16px;
+  span {
+    color: $btn-color;
   }
 }
 .article_desc {
