@@ -463,6 +463,8 @@ nav {
 /* Details Page */
 
 .article_wrapper {
+  width: 100vw;
+  height: 100vh;
   position: relative;
   background: $bg-color;
   padding: 120px 250px 120px 300px;
@@ -474,7 +476,12 @@ nav {
   left: 40px;
   opacity: 40%;
 }
+.approved {
+  top: 40px;
+  left: 50px;
+}
 .article {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -487,6 +494,11 @@ nav {
 
   span {
     color: $logo-color;
+  }
+}
+.tu {
+  span {
+    color: $additional-color;
   }
 }
 .article_subtitle {
