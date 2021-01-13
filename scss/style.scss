@@ -37,7 +37,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 125px;
+  margin-left: 175px;
   margin-right: 450px;
 }
 
@@ -91,7 +91,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   height: 270px;
-  margin: 30px 125px;
+  margin: 30px 175px;
 
   p {
     font-size: 48px;
@@ -112,7 +112,7 @@ nav {
 .header_subtitle {
   position: absolute;
   bottom: 0;
-  padding: 50px 125px 50px 125px;
+  padding: 50px 125px 50px 250px;
   width: 60%;
 
   background: $bg-color;
@@ -565,7 +565,147 @@ nav {
   font-weight: bold;
   color: $btn-color;
 }
+/*Pages*/
+.page_header_title_content {
+  height: 140px;
+  margin: 100px 175px;
 
+  p {
+    font-size: 70px;
+    font-weight: bold;
+    color: $light-text-color;
+  }
+  span {
+    color: $logo-color;
+  }
+}
+
+.page_header_img {
+  position: relative;
+  width: 100%;
+  height: 585px;
+  background: url("../img/aeroflot_plane.jpg") no-repeat;
+  background-size: 100% 120%;
+}
+.page_header_subtitle {
+  position: absolute;
+  top: -25%;
+  left: 40%;
+  padding: 50px 80px 50px 80px;
+  width: 50%;
+  background: $light-text-color;
+
+  p {
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: $bg-color;
+    span {
+      color: $logo-color;
+    }
+  }
+}
+.page_article_content {
+  margin: 125px 125px 125px 125px;
+}
+.page_article {
+  position: relative;
+}
+.page_article_subtitle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  p {
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $bg-color;
+  }
+}
+.page_article_subtitle_svg {
+  align-self: center;
+  padding-left: 50px;
+}
+.page_article_desc {
+  display: grid;
+  grid-template-columns: 125px 30% 50%;
+  grid-template-areas: ". svg text .";
+  margin-bottom: 200px;
+}
+
+.page_article_desc_content {
+  width: 122%;
+  padding: 60px 100px 60px 100px;
+  grid-area: text;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  background: $bg-color;
+  color: $light-text-color;
+}
+.page_article_desc_content_title {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  span {
+    opacity: 50%;
+  }
+}
+.page_article_desc_item {
+  width: 80%;
+  padding-bottom: 16px;
+  span {
+    color: $logo-color;
+  }
+}
+.page_article_svg {
+  grid-area: svg;
+  margin-bottom: 100px;
+  svg {
+    width: 90%;
+  }
+}
+.page_article_cta {
+  position: absolute;
+  display: flex;
+  background: $logo-color;
+
+  padding: 20px;
+  align-items: center;
+  bottom: -250px;
+  left: 250px;
+  right: 250px;
+}
+.page_article_cta_text {
+  color: $bg-color;
+  font-weight: bold;
+  padding: 0 30px;
+  width: 85%;
+}
+.page_article_cta_btn {
+  margin: 30px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-self: end;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  background: $light-text-color;
+  color: $logo-color;
+}
+footer {
+  background: $darkest-bg-color;
+}
+.page_footer_data {
+  color: $light-text-color;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 80px 80px 40px;
+}
 /* Location Page */
 .wrapper_location {
   padding: 40px 125px;

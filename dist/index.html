@@ -47,7 +47,7 @@
           </ul>
         </div>
       </nav>
-      <svg
+      <!--<svg
         class="header_svg"
         width="724"
         height="950"
@@ -60,18 +60,20 @@
           fill="#ED4D66"
         />
       </svg>
-
+    -->
       <div class="header_title_content">
         <p><span>и</span>ндикаторы</p>
         <p><span>к</span>ачества</p>
         <p><span>а</span>виационного</p>
         <p><span>т</span>оплива</p>
       </div>
+      <video class="header_svg" src="img/line_animation_2.mp4" autoplay mute loop></video>
       <div class="header_img">
         <!--<img
             src="img/jerry-zhang-N2i1ASNFpdw-unsplash 1.png"
             alt="imageholder"
                 />-->
+       
         <div class="header_subtitle">
           <p>НАДЕЖНОСТЬ <span>результатов</span></p>
           <p>УВЕРЕННОСТЬ <span>клиентов</span></p>
@@ -327,21 +329,21 @@
             </div>
           </div>
             <div class="contact_form">
-              <form action="">
+              <form name="contact" action="POST" data-netlify="true">
                 <h2>Отправьте сообщение</h2>
                 <div class="input_box">
                   <span>Ваше имя</span>
-                  <input type="text" name="" required="required">
+                  <input type="text" name="name" id="name" required="required">
                   
                 </div>
                 <div class="input_box">
                   <span>Email</span>
-                  <input type="text" name="" required="required" >
+                  <input type="email" name="email" id="email" required="required" >
                   
                 </div>
                 <div class="input_box ">
                   <span>Задайте Ваш вопрос...</span>
-                  <textarea class="question" required="required"></textarea>
+                  <textarea class="message" id="message" required="required"></textarea>
                   
                 </div>
                 <div class="input_box">
