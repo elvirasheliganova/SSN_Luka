@@ -6,7 +6,7 @@
   margin: 0px;
 }
 body {
-  max-width: 1440px;
+  max-width: 1950px;
   font-family: "Manrope", sans-serif;
 
   -webkit-font-smoothing: antialiased;
@@ -99,14 +99,12 @@ nav {
     color: $logo-color;
   }
 }
-section {
-  z-index: 2;
-  position: relative;
-
+.wrapper_svg {
   width: 500px;
   height: 500px;
 }
 .spin {
+  z-index: 2;
   position: absolute;
   top: 0;
   right: 0;
@@ -131,7 +129,7 @@ section {
 }
 @keyframes spinning {
   0% {
-    transform: rotate(310deg);
+    transform: rotate(315deg);
     border-right: 20px solid rgba(237, 77, 102, 0);
   }
   5% {
@@ -192,7 +190,7 @@ section {
     border-right-color: rgba(237, 77, 102, 0.1);
   }
   100% {
-    transform: rotate(350deg);
+    transform: rotate(345deg);
     border-right: 20px solid rgba(237, 77, 102, 0);
   }
 }
@@ -663,6 +661,7 @@ section {
 }
 /*Pages*/
 .page_header_title_content {
+  position: relative;
   height: 140px;
   margin: 100px 175px;
 
@@ -699,6 +698,10 @@ section {
   background: url("../img/plane-wing-package3.jpeg") no-repeat;
   background-size: 100% 100%;
 }
+.ikat_img {
+  background: url("../img/plane-wing-ikat.jpeg") no-repeat;
+  background-size: 100% 100%;
+}
 .page_header_subtitle {
   position: absolute;
   top: -25%;
@@ -706,6 +709,7 @@ section {
   padding: 50px 80px 50px 80px;
   width: 50%;
   background: $light-text-color;
+  z-index: 4;
 
   p {
     font-size: 26px;
@@ -733,7 +737,105 @@ section {
   }
 }
 .page_article_content {
-  margin: 125px 125px 125px 125px;
+  margin: 125px 200px 125px 200px;
+}
+
+.ikat_content {
+  margin: 0 auto;
+  background: $dark-text-color;
+  position: absolute;
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  top: -140px;
+  left: 0;
+  right: 0;
+  width: 80%;
+  color: $bg-color;
+}
+.ikat_content_title {
+  display: flex;
+  justify-content: space-between;
+}
+.ikat_content_title_abbriv {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  font-size: 32px;
+  font-weight: bold;
+
+  span {
+    text-transform: uppercase;
+    color: $logo-color;
+  }
+}
+
+.ikat_content_title_text {
+  font-size: 18px;
+
+  span {
+    color: $logo-color;
+  }
+
+  p {
+    padding-bottom: 16px;
+  }
+}
+.ikat_desc {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: " svg text ";
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background: $light-text-color;
+}
+.ikat_svg {
+  grid-area: svg;
+  svg {
+    margin: 100px;
+
+    width: 80%;
+  }
+}
+.ikat_desc_content {
+  padding: 60px 100px 60px 100px;
+  grid-area: text;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  color: $bg-color;
+
+  p {
+    padding: 0 0 40px 0;
+  }
+  .even {
+    padding-left: 80px;
+  }
+}
+.ikat_desc_content_title {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  span {
+    opacity: 50%;
+  }
+}
+.ikat_cta {
+  position: absolute;
+  display: flex;
+  background: $logo-color;
+
+  padding: 20px;
+  align-items: center;
+  bottom: -1500px;
+  left: 250px;
+  right: 250px;
 }
 .page_article {
   position: relative;
@@ -799,7 +901,7 @@ section {
 
   padding: 20px;
   align-items: center;
-  bottom: -250px;
+  bottom: -1000px;
   left: 250px;
   right: 250px;
 }
