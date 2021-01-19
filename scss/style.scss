@@ -6,7 +6,8 @@
   margin: 0px;
 }
 body {
-  max-width: 1950px;
+  max-width: 1440px;
+
   font-family: "Manrope", sans-serif;
 
   -webkit-font-smoothing: antialiased;
@@ -16,7 +17,7 @@ body {
   font-feature-settings: “pnum”;
   font-variant-numeric: proportional-nums;
 }
-
+/* Home page */
 /* Section Header*/
 
 header {
@@ -75,14 +76,14 @@ nav {
   font-weight: bold;
   color: $dark-bg-color;
 }
-.header_svg {
+/*.header_svg {
   position: absolute;
   width: 670px;
   height: 400px;
 
   top: 0;
   right: 0;
-}
+}*/
 
 .header_title_content {
   display: flex;
@@ -100,12 +101,13 @@ nav {
   }
 }
 .wrapper_svg {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 .spin {
   z-index: 2;
   position: absolute;
+
   top: 0;
   right: 0;
   bottom: 0;
@@ -118,18 +120,18 @@ nav {
   margin: auto auto;
   border-radius: 50%;
   border-right: 20px solid rgba(237, 77, 102, 0.8);
-  animation: spinning 10s linear infinite;
+  animation: spinning 8s linear infinite;
 }
 .container {
   position: absolute;
   right: -500px;
-  top: 400px;
-  width: 1000px;
-  height: 1000px;
+  top: 20px;
+  width: 900px;
+  height: 900px;
 }
 @keyframes spinning {
   0% {
-    transform: rotate(315deg);
+    transform: rotate(350deg);
     border-right: 20px solid rgba(237, 77, 102, 0);
   }
   5% {
@@ -190,7 +192,7 @@ nav {
     border-right-color: rgba(237, 77, 102, 0.1);
   }
   100% {
-    transform: rotate(345deg);
+    transform: rotate(330deg);
     border-right: 20px solid rgba(237, 77, 102, 0);
   }
 }
@@ -198,14 +200,14 @@ nav {
 .header_img {
   position: relative;
   width: 100%;
-  height: 620px;
+  height: 630px;
   background: url("../img/jerry-1.png") no-repeat;
   background-size: 100% 100%;
 }
 .header_subtitle {
   position: absolute;
   bottom: 0;
-  padding: 50px 125px 50px 250px;
+  padding: 50px 125px 30px 175px;
   width: 60%;
 
   background: $bg-color;
@@ -229,7 +231,7 @@ nav {
   font-weight: bold;
 }
 .header_title_desc_text {
-  padding: 16px 100px 16px 125px;
+  padding: 40px 100px 16px 175px;
 
   font-size: 20px;
 
@@ -239,7 +241,7 @@ nav {
 }
 
 .header_title_desc_cta {
-  padding: 80px 100px 80px 125px;
+  padding: 80px 100px 80px 175px;
   font-size: 32px;
   line-height: 32px;
   span {
@@ -254,19 +256,20 @@ nav {
 /* Section Certificate*/
 
 .product_certificate {
-  padding-top: 20px;
   background: $dark-bg-color;
   display: flex;
+  padding: 110px 0;
 }
 .product_certificate_img {
   position: relative;
+
   background: $dark-bg-color;
   width: 40%;
 }
 .certificate_svg {
   position: absolute;
-  top: 60px;
-  left: 125px;
+  top: 80px;
+  left: 175px;
   width: 270px;
   height: 400px;
 }
@@ -278,15 +281,15 @@ nav {
   color: $light-text-color;
 }
 .product_certificate_title {
-  width: 580px;
-  margin: 60px 60px 0 60px;
+  width: 620px;
+  margin: 60px 80px 0 80px;
   font-size: 32px;
   font-weight: bold;
 }
 .product_certificate_subtitle {
   padding-right: 100px;
-  width: 580px;
-  margin: 20px 60px;
+  width: 620px;
+  margin: 20px 80px;
   font-size: 18px;
   font-weight: bold;
   p {
@@ -302,7 +305,7 @@ nav {
   align-items: center;
   width: 160px;
   height: 40px;
-  margin: 40px 60px 100px;
+  margin: 40px 60px 100px 80px;
 
   background: $btn-color;
   font-size: 20px;
@@ -314,6 +317,7 @@ nav {
 .points {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 50vh 50vh;
   grid-template-areas:
     "content1 image1"
     "image2   content2"
@@ -333,11 +337,15 @@ nav {
   grid-area: content3;
   background: $darkest-bg-color;
 }
-.point_content {
-  margin: 100px 125px 0;
+.point_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 125px;
+  padding-right: 40px;
 }
+
 .point_title {
-  margin: 60px 60px 0 0;
   font-size: 32px;
   font-weight: bold;
 }
@@ -358,7 +366,6 @@ nav {
   align-items: center;
   width: 160px;
   height: 40px;
-  margin: 30px 0 70px;
 
   color: $btn-color;
   font-size: 20px;
@@ -408,25 +415,47 @@ nav {
 }
 
 .collaboration_option {
-  padding: 100px;
-  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 80px 500px;
+  padding: 20px 80px;
+  font-size: 22px;
   font-weight: bold;
-  color: $btn-color;
-}
+  background: $dark-text-color;
+  color: $bg-color;
 
+  a {
+    text-decoration: none;
+    color: $bg-color;
+  }
+  i {
+    padding-left: 8px;
+  }
+}
 .collaboration_offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $additional-color;
+  padding: 40px 80px;
+}
+.collaboration_offer_text {
   font-size: 24px;
   font-weight: bold;
-  color: $additional-color;
+
+  color: $bg-color;
 }
 
-.collaboration_cta {
+.collaboration_cta a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 180px;
-  height: 40px;
-  margin: 30px 0 30px;
+  width: 200px;
+  height: 60px;
+  padding: 0 20px;
+  text-decoration: none;
+  background: $bg-color;
 
   color: $light-text-color;
   font-size: 20px;
@@ -482,7 +511,7 @@ nav {
 
   display: flex;
 
-  .location {
+  .contact_option_location {
     color: $btn-color;
   }
 
@@ -498,7 +527,7 @@ nav {
     font-size: 22px;
   }
 
-  .text {
+  .contact_option_text {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -556,7 +585,7 @@ nav {
 }
 
 /* Details, Time, Package, Ikat Pages */
-
+/*
 .article_wrapper {
   width: 100vw;
   height: 100vh;
@@ -631,21 +660,8 @@ nav {
     color: $logo-color;
   }
 }
-.company_data_title {
-  padding: 10px 0;
-  color: $logo-color;
-}
-.company_data_type {
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  p {
-    width: 50%;
-    padding: 2px 0;
-    align-self: start;
-    justify-self: start;
-  }
-}
+
+
 .article_btn {
   margin: 30px 0 30px;
   width: 160px;
@@ -658,15 +674,20 @@ nav {
   font-size: 18px;
   font-weight: bold;
   color: $btn-color;
-}
+}*/
+
 /*Pages*/
 .page_header_title_content {
   position: relative;
   height: 140px;
   margin: 100px 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   p {
     font-size: 70px;
+    line-height: 1;
     font-weight: bold;
     color: $light-text-color;
   }
@@ -700,6 +721,10 @@ nav {
 }
 .ikat_img {
   background: url("../img/plane-wing-ikat.jpeg") no-repeat;
+  background-size: 100% 100%;
+}
+.company_img {
+  background: url("../img/company_plane.jpeg") no-repeat;
   background-size: 100% 100%;
 }
 .page_header_subtitle {
@@ -880,6 +905,9 @@ nav {
     opacity: 50%;
   }
 }
+.company_title {
+  font-size: 32px;
+}
 .page_article_desc_item {
   width: 80%;
   padding-bottom: 16px;
@@ -905,8 +933,34 @@ nav {
   left: 250px;
   right: 250px;
 }
-.time_cta {
+.company_data_title {
+  padding: 10px 0;
+  color: $logo-color;
+}
+.company_data_type {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  p {
+    width: 50%;
+    padding: 2px 0;
+    align-self: start;
+    justify-self: start;
+  }
+}
+.bottom_company {
+  bottom: -250px;
+}
+.bottom_package {
+  bottom: -250px;
   background: $additional-color;
+}
+.bottom_time {
+  bottom: -250px;
+  background: $additional-color;
+}
+.bottom_details {
+  bottom: -250px;
 }
 .page_article_cta_text {
   color: $bg-color;
@@ -955,102 +1009,136 @@ footer {
   }
 }
 /* Media queries*/
-@media screen and (max-width: 1150px) {
-  .header_subtitle p {
-    font-size: 26px;
+@media screen and (max-width: 768px) {
+  .nav_content {
+    margin-left: 125px;
   }
-
-  .product_certificate_title,
-  .product_certificate_subtitle {
-    width: 500px;
-  }
-  .collaboration_title {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  /*.nav_content {
-    padding-top: 15px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-  }*/
-  .header_svg {
-    width: 300px;
-    height: 525px;
-  }
-  .header_subtitle {
-    width: 70%;
-  }
-  .product_certificate_title {
-    font-size: 28px;
-    padding-left: 60px;
-  }
-  .product_certificate_subtitle {
-    padding: 0 60px;
-    width: 500px;
+  .logo_text {
     font-size: 18px;
-    line-height: 1.2;
+    font-weight: bold;
   }
-  .header_title_desc_cta {
-    font-size: 28px;
-    padding-bottom: 40px;
+  .header_title_content {
+    margin: 50px 125px;
 
-    span {
-      color: $logo-color;
+    height: 270px;
+    p {
+      font-size: 36px;
+      span {
+        font-size: 46px;
+      }
     }
   }
-  .btn_more {
-    margin-left: 120px;
-  }
-  .collaboration_title {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 950px) {
-  .product_certificate_subtitle {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 867px) {
-  .header_subtitle p {
-    font-size: 24px;
-  }
-  .product_certificate_title {
-    width: 450px;
-    font-size: 26px;
-    padding-left: 60px;
-  }
-  .product_certificate_subtitle {
-    font-size: 16px;
-  }
-  .collaboration_title {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header_svg {
-    width: 300px;
-    height: 525px;
-    right: -40px;
+  .header_img {
+    height: 420px;
   }
 
-  .hero_subtitle p {
-    font-size: 22px;
+  .header_subtitle {
+    width: 100%;
+    background: $bg-color;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 125px;
+
+    p {
+      color: $light-text-color;
+      font-size: 26px;
+      font-weight: bold;
+    }
   }
-  .hero_cta {
+  .container {
+    right: -700px;
+    top: 140px;
+    width: 800px;
+    height: 800px;
+  }
+  .header_title_desc_text {
+    padding-left: 125px;
+  }
+  .header_title_desc_cta {
     font-size: 22px;
+    padding-left: 125px;
+  }
+  .product_certificate_title {
+    margin: 30px 80px 0 80px;
+    font-size: 20px;
+  }
+
+  .product_certificate_subtitle {
+    width: 400px;
+
+    p {
+      font-size: 14px;
+    }
   }
   .certificate_svg {
-    transform: scale(0.5) translate(-50%, -20%);
+    top: 0;
+    left: 75px;
+    transform: scale(0.8);
+  }
+  .points {
+    grid-template-rows: 100vh 100vh 100vh;
   }
 
-  .product_certificate_title {
-    font-size: 22px;
-    width: 300px;
+  .point_box {
+    padding-left: 75px;
   }
-  .product_certificate_subtitle {
-    font-size: 16px;
-    width: 300px;
+  .point_title {
+    font-size: 18px;
+  }
+  .point_subtitle {
+    font-size: 14px;
+  }
+  .variants p {
+    font-size: 14px;
+  }
+  .collaboration_title {
+    font-size: 22px;
+  }
+
+  .collaboration_option {
+    margin-left: 75px;
+    font-size: 14px;
+    padding-left: 16px;
+    align-items: start;
+  }
+  .collaboration_offer_text {
+    font-size: 18px;
+  }
+  .collaboration_cta {
+    width: 140px;
+    margin-right: 10px;
+    a {
+      font-size: 14px;
+    }
+  }
+  .contact_container {
+    padding: 50px 125px 100px 125px;
+  }
+
+  .contact_content {
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .contact_option_text {
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .contact_option_location p a {
+    text-decoration: none;
+    color: $btn-color;
+  }
+  .contact_form {
+    padding: 30px;
+    h2 {
+      font-size: 18px;
+    }
   }
 }
