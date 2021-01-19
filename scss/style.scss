@@ -63,7 +63,7 @@ nav {
 
 .logo {
   background: $logo-color;
-  min-width: 210px;
+  width: 210px;
   height: 60px;
   margin-right: 50px;
 
@@ -129,7 +129,7 @@ nav {
   width: 900px;
   height: 900px;
 }
-@keyframes spinning {
+/*@keyframes spinning {
   0% {
     transform: rotate(350deg);
     border-right: 20px solid rgba(237, 77, 102, 0);
@@ -195,7 +195,7 @@ nav {
     transform: rotate(330deg);
     border-right: 20px solid rgba(237, 77, 102, 0);
   }
-}
+}*/
 
 .header_img {
   position: relative;
@@ -254,11 +254,16 @@ nav {
 }
 
 /* Section Certificate*/
-
 .product_certificate {
   background: $dark-bg-color;
+}
+.product_certificate_content {
   display: flex;
   padding: 110px 0;
+}
+.product_certificate_title_small {
+  width: 0;
+  visibility: hidden;
 }
 .product_certificate_img {
   position: relative;
@@ -1140,5 +1145,160 @@ footer {
     h2 {
       font-size: 18px;
     }
+  }
+}
+@media screen and (max-width: 420px) {
+  .nav_content {
+    flex-direction: column;
+    margin-left: 60px;
+    margin-right: 80px;
+    align-items: start;
+  }
+  .logo {
+    margin: 0;
+    width: 140px;
+  }
+  .logo_text {
+    font-size: 14px;
+  }
+  .nav_menu {
+    a {
+      font-size: 8px;
+    }
+  }
+  .header_title_content {
+    margin: 40px 60px;
+    height: 160px;
+
+    p {
+      font-size: 30px;
+      span {
+        font-size: 36px;
+      }
+    }
+  }
+  .header_subtitle {
+    width: 100%;
+    top: 420px;
+    padding: 40px;
+    p {
+      font-size: 18px;
+      padding-bottom: 0;
+    }
+  }
+  .header_title_desc_text {
+    padding: 140px 40px 0 40px;
+    font-size: 14px;
+  }
+  .header_title_desc_cta {
+    padding: 40px;
+    font-size: 14px;
+  }
+  .product_certificate {
+    padding: 40px 40px 0 40px;
+  }
+  .product_certificate_img {
+    width: 0;
+  }
+  .certificate_svg {
+    transform: scale(0.4);
+    top: -250px;
+    left: -80px;
+  }
+  .product_certificate_text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .product_certificate_title_small {
+    padding-top: 40px;
+    padding-left: 140px;
+
+    visibility: visible;
+    width: 100%;
+    font-size: 26px;
+    line-height: 1.2;
+    color: $light-text-color;
+  }
+  .product_certificate_title {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .product_certificate_subtitle {
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    p {
+      padding: 30px 8px;
+      background: $light-text-color;
+      color: $bg-color;
+      margin: 40px 16px 0 16px;
+    }
+  }
+  .product_certificate_content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .btn_more {
+    margin: 40px 0 40px 180px;
+
+    font-size: 14px;
+  }
+  .points {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 70vh 30vh 70vh 30vh 70vh;
+    grid-template-areas:
+      "image1"
+      "content1 "
+      "image2   "
+      "content2"
+      "image3"
+      "content3 ";
+  }
+  .point_btn a {
+    font-size: 16px;
+    width: 120px;
+  }
+  .collaboration {
+    padding: 60px;
+  }
+  .variants {
+    grid-template-columns: 40px 1fr 0;
+  }
+  .collaboration_option {
+    padding: 20px 8px;
+    margin: 60px 0 20px 0;
+    font-size: 14px;
+  }
+  .collaboration_offer {
+    flex-direction: column;
+    padding: 20px 10px 20px 10px;
+  }
+  .collaboration_offer_text {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+  .collaboration_cta {
+    margin: 0 0 0 100px;
+
+    a {
+      width: 140px;
+      height: 40px;
+      padding: 0 10px;
+    }
+  }
+  .contact_container {
+    flex-direction: column;
+    padding: 50px 60px;
+  }
+  .contact_container_info {
+    width: 100%;
+  }
+  .contact_form {
+    margin-top: 60px;
+    width: 100%;
   }
 }
