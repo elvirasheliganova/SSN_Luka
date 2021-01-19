@@ -334,13 +334,23 @@ nav {
   grid-area: content1;
   background: $darkest-bg-color;
 }
+.aim_picture {
+  margin: auto;
+}
 .details {
   grid-area: content2;
   background: $darkest-bg-color;
 }
+
+.details_picture {
+  margin: auto;
+}
 .storage {
   grid-area: content3;
   background: $darkest-bg-color;
+}
+.storage_picture {
+  margin: auto;
 }
 .point_box {
   display: flex;
@@ -394,14 +404,24 @@ nav {
   display: grid;
   grid-template-columns: 80px 1fr 80px;
   grid-template-areas:
-    "check1 text1"
-    "check2 text2"
-    "check3 text3";
+    "check1 text1 ."
+    "check2 text2 ."
+    "check3 text3 .";
 }
 
-.variant_check {
-  width: 80px;
+.variant_check_checked {
+  width: 50px;
+  grid-area: check1;
 }
+.variant_check_empty1 {
+  width: 50px;
+  grid-area: check2;
+}
+.variant_check_empty2 {
+  width: 50px;
+  grid-area: check3;
+}
+
 .variant {
   padding: 20px;
   font-size: 18px;
@@ -1018,9 +1038,14 @@ footer {
   .nav_content {
     margin-left: 125px;
   }
+  .logo {
+    padding: 0 20px;
+  }
   .logo_text {
-    font-size: 18px;
+    width: 140px;
+    font-size: 16px;
     font-weight: bold;
+    align-self: center;
   }
   .header_title_content {
     margin: 50px 125px;
