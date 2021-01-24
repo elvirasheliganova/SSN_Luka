@@ -804,6 +804,7 @@ nav {
 }
 .time_header_subtitle {
   left: 45%;
+  top: -15%;
   p span {
     color: $additional-color;
   }
@@ -1066,6 +1067,21 @@ nav {
 }
 .package_cta_btn_content {
   color: $additional-color;
+}
+/* Time and experts page */
+
+.time_spin {
+  border-color: #808dde;
+}
+.time_desc {
+  margin: 100px 100px 200px 100px;
+  background: $bg-color;
+}
+.time_desc_content {
+  margin-top: 50px;
+}
+.time_svg {
+  margin-top: 160px;
 }
 .time_btn {
   color: $bg-color;
@@ -1951,6 +1967,7 @@ footer {
       color: $additional-color;
     }
   }
+
   .page_footer_data {
     padding: 80px 10px 10px;
   }
