@@ -221,8 +221,30 @@ nav {
   background: url("../img/jerry-1.png") no-repeat;
   background-size: 100% 100%;
 }
-.header_subtitle {
+.header_subtitle_large {
   position: absolute;
+  bottom: 0;
+  padding: 50px 125px 30px 175px;
+  width: 60%;
+
+  background: $bg-color;
+  p {
+    color: $light-text-color;
+
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    span {
+      opacity: 50%;
+    }
+  }
+}
+.header_subtitle_small {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+
   bottom: 0;
   padding: 50px 125px 30px 175px;
   width: 60%;
@@ -1130,7 +1152,7 @@ footer {
   .logo_text {
     font-size: 18px;
   }
-  .header_subtitle p {
+  .header_subtitle_large p {
     font-size: 26px;
   }
   .header_title_desc_cta {
@@ -1290,7 +1312,7 @@ footer {
       font-size: 40px;
     }
   }
-  .header_subtitle {
+  .header_subtitle_large {
     width: 70%;
     p {
       font-size: 24px;
@@ -1577,7 +1599,7 @@ footer {
       color: $additional-color;
     }
   }
-  /* Dateils Page */
+  /* Details Page */
   .details_desc {
     width: 100%;
 
@@ -1636,7 +1658,7 @@ footer {
     height: 420px;
   }
 
-  .header_subtitle {
+  .header_subtitle_large {
     background: $bg-color;
     width: 80%;
     margin: 0 auto;
@@ -1762,6 +1784,39 @@ footer {
     a {
       font-size: 10px;
     }
+  }
+  .header_subtitle_large {
+    visibility: hidden;
+
+    width: 0;
+    height: 0;
+  }
+  .header_subtitle_small {
+    visibility: visible;
+    width: 100%;
+    padding-left: 100px;
+    margin-bottom: 60px;
+    p {
+      font-size: 24px;
+    }
+  }
+  .header_title_desc_text {
+    padding: 40px 60px 40px 100px;
+    font-size: 16px;
+  }
+  .header_title_desc_cta {
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  .product_certificate_content {
+    padding: 80px 0;
+  }
+  .certificate_svg {
+    top: -150px;
+    left: 40px;
+    transform: scale(0.6);
   }
 
   /* Package Page*/
