@@ -2736,11 +2736,26 @@ footer {
   .header_subtitle_small {
     padding-left: 50px;
   }
+  .header_title_desc_cta {
+    width: 70%;
+    padding-left: 50px;
+
+    a {
+      font-size: 16px;
+      line-height: 0.9;
+    }
+  }
   .product_certificate {
     padding: 40px 40px 0 40px;
   }
   .product_certificate_title_small {
     font-size: 26px;
+  }
+  .btn_more {
+    margin-top: 20px;
+    a {
+      font-size: 16px;
+    }
   }
   .point_box {
     padding: 60px;
@@ -2843,14 +2858,25 @@ footer {
     height: 0;
     visibility: hidden;
   }
+  .product_certificate_title {
+    margin: 0;
+  }
+  .product_certificate_title_small {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .product_certificate_img {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
   .product_certificate_subtitle {
-    font-size: 12px;
     width: 100%;
     margin: 0;
     padding: 0;
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       padding: 30px;
       background: $light-text-color;
       color: $bg-color;
@@ -3285,7 +3311,7 @@ footer {
   }
   .points {
     grid-template-columns: 1fr;
-    grid-template-rows: 30vh 50vh 30vh 50vh 30vh 50vh;
+    grid-template-rows: 30vh 60vh 30vh 60vh 30vh 60vh;
     grid-template-areas:
       "image1"
       "content1 "
@@ -3294,6 +3320,7 @@ footer {
       "image3"
       "content3 ";
   }
+
   .collaboration {
     padding: 50px;
   }
