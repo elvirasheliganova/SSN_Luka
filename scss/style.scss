@@ -149,6 +149,7 @@ nav {
   width: 900px;
   height: 900px;
 }
+/*
 @keyframes spinning {
   0% {
     transform: rotate(350deg);
@@ -215,7 +216,7 @@ nav {
     transform: rotate(330deg);
     border-right: 20px solid rgba(237, 77, 102, 0);
   }
-}
+}*/
 
 .header_img {
   position: relative;
@@ -2148,10 +2149,6 @@ footer {
     }
   }
 
-  .contact_container {
-    padding: 50px 125px 100px 125px;
-  }
-
   .contact_content {
     h2 {
       font-size: 30px;
@@ -2464,9 +2461,13 @@ footer {
   }
   .collaboration_title {
     padding-bottom: 0;
+    font-size: 24px;
   }
   .variants {
     grid-template-columns: 30px 1fr 0;
+  }
+  .variant p {
+    font-size: 16px;
   }
   .variant_check_checked svg,
   .variant_check_empty1 svg,
@@ -2474,6 +2475,7 @@ footer {
     height: 20px;
   }
   .collaboration_option {
+    font-size: 16px;
     padding: 20px;
     margin: 50px 0;
   }
@@ -2487,8 +2489,26 @@ footer {
     }
   }
   .contact_container {
-    padding: 50px;
+    padding: 50px 80px;
   }
+  .contact_content {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .contact_option_text {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
   /* Time page */
 
   .time_title_content {
@@ -2726,13 +2746,19 @@ footer {
     padding: 60px;
   }
   .collaboration {
-    padding: 50px;
+    padding: 60px;
   }
   .collaboration_title {
     font-size: 22px;
   }
+  .variant p {
+    font-size: 16px;
+  }
   .collaboration_cta a {
     font-size: 14px;
+  }
+  .contact_container {
+    padding: 60px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -2765,20 +2791,23 @@ footer {
   .header_subtitle_small {
     width: 100%;
     top: 420px;
-    padding: 40px;
+    padding: 50px;
     p {
       font-size: 20px;
       padding-bottom: 6px;
     }
   }
   .header_title_desc_text {
-    padding: 0 40px 0 40px;
+    padding: 0 50px 0 50px;
     font-size: 14px;
   }
   .header_title_desc_cta {
-    padding: 40px;
+    width: 70%;
+    padding-left: 50px;
+
     a {
       font-size: 16px;
+      line-height: 0.9;
     }
   }
   /* Certificate Page */
@@ -2866,10 +2895,18 @@ footer {
     padding: 60px;
   }
   .collaboration_title {
-    font-size: 22px;
+    font-size: 20px;
   }
   .variants {
-    grid-template-columns: 40px 1fr 0;
+    grid-template-columns: 20px 1fr 0;
+  }
+  .variant p {
+    font-size: 14px;
+  }
+  .variant_check_checked,
+  .variant_check_empty1,
+  .variant_check_empty2 {
+    width: 30px;
   }
   .variant_check_checked svg,
   .variant_check_empty1 svg,
@@ -3229,6 +3266,12 @@ footer {
       }
     }
   }
+  .header_img {
+    height: 350px;
+  }
+  .header_subtitle_small p {
+    font-size: 18px;
+  }
   .product_certificate {
     padding: 40px 30px 0 30px;
   }
@@ -3239,6 +3282,58 @@ footer {
     margin-left: 115px;
 
     font-size: 12px;
+  }
+  .points {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 50vh 30vh 50vh 30vh 50vh;
+    grid-template-areas:
+      "image1"
+      "content1 "
+      "image2   "
+      "content2"
+      "image3"
+      "content3 ";
+  }
+  .collaboration {
+    padding: 50px;
+  }
+  .collaboration_title {
+    font-size: 20px;
+  }
+
+  .variant_check_checked,
+  .variant_check_empty1,
+  .variant_check_empty2 {
+    width: 30px;
+  }
+  .variant_check_checked svg,
+  .variant_check_empty1 svg,
+  .variant_check_empty2 svg {
+    height: 20px;
+  }
+
+  .collaboration_option {
+    padding: 20px 8px;
+    margin: 20px 0 20px 0;
+    font-size: 14px;
+  }
+  .collaboration_offer {
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .collaboration_offer_text {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  .collaboration_cta {
+    margin: 0 0 0 100px;
+
+    a {
+      width: 140px;
+      height: 40px;
+      padding: 0 10px;
+    }
   }
   /* Pages */
 
@@ -3422,7 +3517,7 @@ footer {
   }
   .points {
     grid-template-columns: 1fr;
-    grid-template-rows: 40vh 60vh 40vh 60vh 40vh 60vh;
+    grid-template-rows: 30vh 60vh 30vh 60vh 30vh 60vh;
     grid-template-areas:
       "image1"
       "content1 "
@@ -3432,7 +3527,7 @@ footer {
       "content3 ";
   }
   .point_subtitle {
-    font-size: 12px;
+    font-size: 13px;
   }
   .collaboration {
     padding: 60px 30px;
