@@ -2621,9 +2621,9 @@ footer {
     height: 420px;
   }
   .ikat_header_subtitle {
-    left: 18%;
-    width: 78%;
-    padding: 24px;
+    left: 20%;
+    width: 70%;
+    padding: 22px;
     p {
       font-size: 14px;
     }
@@ -2631,12 +2631,16 @@ footer {
   .container_spin_ikat {
     visibility: hidden;
   }
+  .ikat_content {
+    padding: 60px 80px;
+  }
   .ikat_desc {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-areas: " text  svg";
     margin-top: 250px;
     margin-bottom: 100px;
+    padding: 80px 40px 80px 20px;
     background: $light-text-color;
   }
   .ikat_svg svg {
@@ -2653,8 +2657,12 @@ footer {
     margin-top: 50px;
   }
   .ikat_desc_content p {
-    width: 400px;
+    width: 350px;
   }
+  p.odd {
+    padding-top: 40px;
+  }
+
   /* Company Page */
   .company_header_title_content {
     margin: 0;
@@ -2774,6 +2782,26 @@ footer {
   }
   .contact_container {
     padding: 60px;
+  }
+
+  .ikat_desc_content p {
+    width: 300px;
+  }
+  .ikat_cta {
+    padding: 30px;
+    bottom: 100px;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+  .ikat_cta_btn {
+    margin: 0 10% 0 0;
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+  }
+  .ikat_cta_text {
+    padding: 10px 0;
   }
 }
 @media screen and (max-width: 420px) {
@@ -3031,9 +3059,13 @@ footer {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-areas: " text  svg";
+    padding: 80px 60px 80px 20px;
     margin-top: 250px;
     margin-bottom: 100px;
     background: $light-text-color;
+  }
+  .ikat_desc_content p {
+    width: 250px;
   }
   .ikat_svg svg {
     margin-top: 100px;
@@ -3048,9 +3080,7 @@ footer {
   .ikat_desc_content_title {
     margin-top: 50px;
   }
-  .ikat_desc_content p {
-    width: 300px;
-  }
+
   /* Time Page */
 
   .time_title_content {
@@ -3180,7 +3210,7 @@ footer {
 
   .page_article_cta_btn {
     height: 30px;
-    width: 120px;
+    width: 100px;
     margin: 0 50px 0 0;
     padding-top: 0;
     align-self: flex-end;
@@ -3371,7 +3401,10 @@ footer {
   .page_article_cta_btn {
     width: 100px;
     height: 30px;
-    margin: 10px 40px 10px 0;
+    margin: 10px 10% 10px 0;
+  }
+  .page_article_cta_btn_content {
+    font-size: 10px;
   }
   .details_header_content {
     margin: 0;
@@ -3421,16 +3454,34 @@ footer {
   /* IKAT Page */
 
   .ikat_desc {
-    margin: 300px 0 150px 0;
+    margin: 200px 0 50px 0;
   }
   .ikat_svg svg {
     margin-top: 80px;
     padding: 0;
   }
+  .ikat_desc_content {
+    padding-left: 40px;
+  }
   .ikat_desc_content p {
     width: 240px;
   }
-
+  p.odd {
+    padding-top: 15px;
+  }
+  .ikat_desc_content .even {
+    padding-left: 40px;
+  }
+  .ikat_cta {
+    padding-bottom: 10px;
+  }
+  .ikat_cta_text {
+    padding: 0;
+  }
+  .ikat_cta_btn {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
   /* Company Page */
 
   .company_header_title_content {
@@ -3502,6 +3553,9 @@ footer {
   }
 }
 @media screen and (max-width: 320px) {
+  .nav_menu li {
+    margin-right: 5px;
+  }
   .page_article_cta_text {
     padding: 0 0 10px 0;
     font-size: 10px;
@@ -3564,6 +3618,19 @@ footer {
   }
   .collaboration_option {
     font-size: 12px;
+  }
+
+  /* IKAT Page */
+  .ikat_desc {
+    margin-top: 230px;
+  }
+  .ikat_svg svg {
+    width: 90px;
+    margin-left: 80px;
+  }
+  .ikat_desc_content p {
+    font-size: 11px;
+    width: 220px;
   }
   .package_header_title_content p {
     font-size: 42px;
