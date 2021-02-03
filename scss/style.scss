@@ -2509,7 +2509,23 @@ footer {
       font-size: 16px;
     }
   }
-
+  /* Pages */
+  .page_article_cta {
+    padding-top: 30px;
+    bottom: 120px;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    background: $dark-text-color;
+  }
+  .page_article_cta_btn {
+    height: 30px;
+    width: 110px;
+    margin: 0 50px 0 0;
+    padding-top: 0;
+    align-self: flex-end;
+    background-color: $additional-color;
+  }
   /* Time page */
 
   .time_title_content {
@@ -2694,10 +2710,16 @@ footer {
     margin: 0;
   }
   .company_desc {
-    grid-template-columns: 0 100% 0;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
-  .company_content {
-    padding: 80px;
+
+  .company_data {
+    padding-bottom: 0;
+  }
+  .bottom_company {
+    padding-bottom: 30px;
   }
   /* Location Page */
   .location_header_title_content {
@@ -2786,6 +2808,9 @@ footer {
     padding: 60px;
   }
 
+  /* Pages */
+
+  /* IKAT Page */
   .ikat_desc_content p {
     font-size: 14px;
     width: 300px;
@@ -2811,6 +2836,33 @@ footer {
   .ikat_cta_text {
     padding: 10px 0;
   }
+}
+/* Company Page */
+
+.company_header_title_content {
+  margin: 0;
+  padding: 40px 40px 200px 40px;
+  height: 320px;
+  p {
+    padding-top: 60px;
+  }
+}
+.company_header_subtitle {
+  width: 60%;
+  top: -80px;
+  left: 30%;
+  p {
+    font-size: 13px;
+  }
+}
+.company_img {
+  height: 380px;
+}
+.company_desc {
+  padding-bottom: 20px;
+}
+.company_content {
+  padding: 60px 40px;
 }
 @media screen and (max-width: 420px) {
   .nav_content {
