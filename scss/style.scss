@@ -2803,6 +2803,10 @@ footer {
     width: 100px;
     height: 30px;
     align-self: flex-end;
+    background: $additional-color;
+  }
+  .ikat_cta_btn_content a {
+    color: $bg-color;
   }
   .ikat_cta_text {
     padding: 10px 0;
@@ -3218,12 +3222,12 @@ footer {
     margin: 0 50px 0 0;
     padding-top: 0;
     align-self: flex-end;
-    background-color: $light-text-color;
+    background-color: $additional-color;
   }
   .page_article_cta_btn_content {
     margin: 4px;
     a {
-      color: $additional-color;
+      color: $bg-color;
     }
   }
   .ikat_cta {
@@ -3403,7 +3407,7 @@ footer {
     font-size: 10px;
   }
   .page_article_cta_btn {
-    width: 100px;
+    width: 80px;
     height: 30px;
     margin: 10px 10% 10px 0;
   }
@@ -3565,7 +3569,7 @@ footer {
     font-size: 10px;
   }
   .page_article_cta_btn {
-    width: 100px;
+    width: 80px;
     height: 30px;
   }
 
