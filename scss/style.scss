@@ -1102,6 +1102,11 @@ nav {
     text-decoration: none;
   }
 }
+.company_subtitle {
+  p {
+    padding: 10px 10px;
+  }
+}
 .bottom_ikat {
   bottom: -1350px;
 }
@@ -1300,6 +1305,9 @@ footer {
 .document_box_content_desc {
   font-size: 14px;
   font-weight: bold;
+}
+.company_subtitle p {
+  padding: 10px;
 }
 /* Media queries*/
 
@@ -1549,7 +1557,7 @@ footer {
   }
   .page_article_subtitle p {
     font-size: 14px;
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
   .page_article_cta_text {
     font-size: 14px;
